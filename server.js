@@ -8,7 +8,7 @@ const fs = require("fs");
 const app = express();
 
 //Server port identification
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // TODO Database/Array
 const todos = [
