@@ -3,6 +3,7 @@ $(document).ready(function () {
   const $todoInput = $("#addTodoInput");
   const $todosDiv = $("#todos");
 
+  //Async API call - This line of code speaks to code on server.js
   $.get("/api/todos").then((todos) => {
     todos.forEach((todo) => {
       const $todosCol = $("<div>")
