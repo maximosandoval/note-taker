@@ -1,6 +1,6 @@
 # Note Taker App Built with Express.js
 
-Note Taker is an browser-based application which writes and saves notes within the web browser. Built in Express.js, HTML, CSS, JS, and JSON - this web-based application will save, retrieve, and delete end user "note" data directly from an array in a server-side JSON file.
+Note Taker is a browser-based application that writes and saves notes within the web browser. Built in Express.js, HTML, CSS, JS, and JSON - this web-based application will save, retrieve, and delete end-user "note" data directly from an array in a server-side JSON file.
 
 - [Click here to view deployed HEROKU app](https://du-note-taker-app.herokuapp.com/)
 - [VIDEO](https://media.publit.io/file/DU/note-taker-walkthru.mp4)
