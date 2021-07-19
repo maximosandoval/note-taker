@@ -1,5 +1,17 @@
 {
+  "name": "module-11",
+  "version": "1.0.0",
+  "description": "<!-- Insert Images ![Inset Image Name and it will auto place in readme file](Insert the github link starting with https://github...) -->",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
   }
 }
