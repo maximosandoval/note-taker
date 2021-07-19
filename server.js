@@ -1,6 +1,8 @@
 //App is Express dependent
 const express = require("express");
 const path = require("path");
+const db = require("./db/db.json");
+const fs = require("fs");
 
 //Envokes Express app
 const app = express();
@@ -25,6 +27,21 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   consol.log(__dirname);
   res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+//ROUTE TO GET NOTES
+app.get("/notes", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "notes.html"));
+});
+
+app.get("/api/notes", (req, res) => {
+  res.json(db);
+});
+
+//To-do POST Rou
+app.post("/api/notes", (req, res) => {
+  db.push(req.body);
+  fs.writeFileSync("./db/db.json", JSON.stringify(db));
+  res.json(req.body);
 });
 // /api/todo list
 app.get("/api/todos", (req, res) => {
