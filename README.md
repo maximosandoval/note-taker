@@ -1,99 +1,54 @@
-<!-- Insert Images
-![Inset Image Name and it will auto place in readme file](Insert the github link starting with https://github...) -->
+# Note Taker App Built with Express.js
 
-# Note Taker
-
-One Paragraph of the project description
-
-Initially appeared on
-[gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2). But the page cannot open anymore so that is why I have moved it here.
+Note Taker is an browser-based application which writes and saves notes within the web browser. Built in Express.js, HTML, CSS, JS, and JSON - this web-based application will save, retrieve, and delete end user "note" data directly from an array in a server-side JSON file.
 
 - [Click here to view deployed HEROKU app](https://du-note-taker-app.herokuapp.com/)
+- [VIDEO](https://media.publit.io/file/DU/note-taker-walkthru.mp4)
 
-## Getting Started
+## End User Story
 
-These instructions will give you a copy of the project up and running on
-your local machine for development and testing purposes. See deployment
-for notes on deploying the project on a live system.
+- I WANT to be able to write and save notes
+- SO THAT I can organize my thoughts and keep track of tasks I need to complete
+- GIVEN a note-taking application
+- WHEN I open the Note Taker
+- THEN I am presented with a landing page with a link to a notes page
+- WHEN I click on the link to the notes page
+- THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
+- WHEN I enter a new note title and the note’s text
+- THEN a Save icon appears in the navigation at the top of the page
+- WHEN I click on the Save icon
+- THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
+- WHEN I click on an existing note in the list in the left-hand column
+- THEN that note appears in the right-hand column
+- WHEN I click on the Write icon in the navigation at the top of the page
+- THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
-### Prerequisites
+## Installing
 
-Requirements for the software and other tools to build, test and push
+Follow the step by step guide to get a development environment running
 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
+Open Terminal and run the following command:
 
-### Installing
+    node server.js
 
-A step by step series of examples that tell you how to get a development
-environment running
+The local server can be pulled up in the URL of your local web browser with the following command:
 
-Say what the step will be
+    localhost:3001
 
-    Give the example
+End your local server via terminal:
 
-And repeat
-
-    until finished
-
-End with an example of getting some data out of the system or using it
-for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Sample Tests
-
-Explain what these tests test and why
-
-    Give an example
-
-### Style test
-
-Checks if the best practices and the right coding style has been used.
-
-    Give an example
-
-## Deployment
-
-Add additional notes to deploy this on a live system
+    Control and(+) "C"
 
 ## Built With
 
-- [Contributor Covenant](https://www.contributor-covenant.org/) - Used
-  for the Code of Conduct
-- [Creative Commons](https://creativecommons.org/) - Used to choose
-  the license
+- [Node.js]
+  - [Express.js]
+- [JavaScript]
+- [HTML]
+- [CSS]
+- [Bootstrap]
 
-## Contributing
+## Screenshots
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this
-repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
-
-## Authors
-
-- **Billie Thompson** - _Provided README Template_ -
-  [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of
-[contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
-who participated in this project.
-
-## License
-
-This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
-
-## Acknowledgments
-
-- Hat tip to anyone whose code is used
-- Inspiration
-- etc
+[Note Taker Start Page](https://github.com/maximosandoval/note-taker/blob/main/img/note-lp.png)
+[Note Taker Screenshot](https://github.com/maximosandoval/note-taker/blob/main/img/note-screen-1.png)
