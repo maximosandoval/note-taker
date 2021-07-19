@@ -12,7 +12,7 @@ if (window.location.pathname === "/notes") {
   noteList = document.querySelectorAll(".list-container .list-group");
 }
 
-// Show an element
+// Display an Element
 const show = (elem) => {
   elem.style.display = "inline";
 };
@@ -22,10 +22,10 @@ const hide = (elem) => {
   elem.style.display = "none";
 };
 
-// activeNote is used to keep track of the note in the textarea
+// activeNote middleware ensure the notes are captured
 let activeNote = {};
 
-// get request for the notes
+// GET request for notes
 const getNotes = () =>
   fetch("/api/notes", {
     method: "GET",
@@ -34,7 +34,7 @@ const getNotes = () =>
     },
   });
 
-// post request for the notes
+// POST notes
 const saveNote = (note) =>
   fetch("/api/notes", {
     method: "POST",
@@ -44,7 +44,7 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   });
 
-// delete request for the notes
+// EXTRA CREDIT DELETE Note(s)
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: "DELETE",
@@ -70,7 +70,7 @@ const renderActiveNote = () => {
   }
 };
 
-// save note
+// SAVE NOTE TO SERVER
 const handleNoteSave = () => {
   const newNote = {
     title: noteTitle.value,
@@ -82,9 +82,8 @@ const handleNoteSave = () => {
   });
 };
 
-// Delete the clicked note
+// DELETE EXISTING NOTE
 const handleNoteDelete = (e) => {
-  // Prevents the click listener for the list from being called when the button inside of it is clicked
   e.stopPropagation();
 
   const note = e.target;
@@ -100,14 +99,14 @@ const handleNoteDelete = (e) => {
   });
 };
 
-// Sets the activeNote and displays it
+// DISPLAY ACTIVE NOTE
 const handleNoteView = (e) => {
   e.preventDefault();
   activeNote = JSON.parse(e.target.parentElement.getAttribute("data-note"));
   renderActiveNote();
 };
 
-// Sets the activeNote to and empty object and allows the user to enter a new note
+// ACTIVENOTE TO EMPLTY OBJECT SO A NEW NOTE CAN BE SUBMITTED / VIEWED
 const handleNewNoteView = (e) => {
   activeNote = {};
   renderActiveNote();
@@ -121,7 +120,7 @@ const handleRenderSaveBtn = () => {
   }
 };
 
-// Render the list of note titles
+// RENDER NOTE CONTENT
 const renderNoteList = async (notes) => {
   let jsonNotes = await notes.json();
   if (window.location.pathname === "/notes") {
@@ -160,7 +159,7 @@ const renderNoteList = async (notes) => {
   };
 
   if (jsonNotes.length === 0) {
-    noteListItems.push(createLi("No saved Notes", false));
+    noteListItems.push(createLi("No Notes Saved", false));
   }
 
   jsonNotes.forEach((note) => {
